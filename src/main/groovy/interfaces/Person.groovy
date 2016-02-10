@@ -1,3 +1,4 @@
+package interfaces
 /**
  * Created by Sab3r on 2016/02/07.
  */

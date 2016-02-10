@@ -1,4 +1,4 @@
-apply plugin: 'groovy' // Groovy plugin 
+apply plugin: 'groovy' // Groovy plugin
 apply plugin: 'java'
 
 group 'AwsDemo3'
@@ -11,6 +11,7 @@ repositories {
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.4'
     compile 'com.amazonaws:aws-lambda-java-core:1.0.0'
+    compile 'com.amazonaws:aws-java-sdk-dynamodb:1.10.50'
 }
 
 task buildZip(type: Zip) {
