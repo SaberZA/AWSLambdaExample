@@ -22,8 +22,10 @@ def customers = dogeService.getAllCustomers();
 //}
 
 //dogeService.getProducts()
-dogeService.getCustomer("divan.visagie@kaleidocode.co.za")
-//println(cust1.id)
+def cust1 = dogeService.getCustomer("divan.visagie@kaleidocode.co.za")
+println "$cust1.id - $cust1.fullName - $cust1.password - $cust1.email"
+
+//dogeService.createOrder(new Order())
 
 
 
