@@ -1,21 +1,14 @@
 import {Component, OnInit} from 'angular2/core'
-import {Bootie} from './bootie'
-import {BootieService} from './bootie.service';
+import {Bootie} from '../bootie'
+import {BootieService} from '../services/bootie.service';
 
 @Component({
   selector: 'doge-bootie',
   providers: [BootieService],
-  template: `This be a doge bootie list
-  <ul class="booties">
-    <li *ngFor="#bootie of booties" (click)="onSelect(bootie)">
-      <!-- each hero goes here -->
-      <span class="badge">{{bootie.id}}</span> {{bootie.name}}
-    </li>
-  </ul>
-  `
+  templateUrl: 'app/product-list/product-list.component.html'
 })
 
-export class BootieListComponent implements OnInit {
+export class ProductListComponent implements OnInit {
 
   constructor(private _bootieService: BootieService) { }
 
