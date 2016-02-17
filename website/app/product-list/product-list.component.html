@@ -1,0 +1,20 @@
+<div class="content">
+  <div class="row">
+    <div class="col-md-4" *ngFor="#bootie of booties">
+      <div class="panel panel-default">
+        <div style="width: 100%; overflow:hidden;">
+          <img src="http://placehold.it/360x270" alt="" style="width: 100%">
+          <!-- <img src="http://httpstatusdogs.com/wp-content/uploads/2011/12/404.jpg" alt=""> -->
+        </div>
+        <div class="panel-body">
+          <h4 class="">{{bootie.name}}   <small>Product Number: {{bootie.id}}</small></h4>
+
+
+          <div class="content">
+            {{bootie.description}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
