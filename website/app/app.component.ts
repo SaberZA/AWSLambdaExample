@@ -7,14 +7,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/route
 
 @Component({
   selector: 'doge-app',
-  template: `<h2>{{title}}</h2>
-
-    <h3>Much booties WOW!</h3>
-
-    <doge-bootie>Loading a list of doge booties...</doge-bootie>
-    <h1>My Doge App</h1>
-                <a [routerLink] = "['Registration']">Registration</a>
-                <router-outlet></router-outlet>`,
+  templateUrl: 'app/app.component.html',
   directives: [
     BootieListComponent,
     ROUTER_DIRECTIVES
